@@ -1,0 +1,39 @@
+### Teste API
+GET http://localhost:3003/
+
+### Get all courses
+GET http://localhost:3003/courses
+
+### Get course by name
+GET http://localhost:3003/courses/search?name=express
+###                                             /\ para buscar, basta trocar o valor que vem depois do name=
+
+### Add new course
+POST http://localhost:3003/courses
+Content-Type: application/json
+
+{
+    "id": "c005",
+    "name": "Course name",
+    "lessons": 00,
+    "stack": "stack"
+}
+
+//                   > EXERCÍCIO DE FIXAÇÃO <
+
+### Get all students
+GET http://localhost:3003/students
+
+### Get student by name
+GET http://localhost:3003/students/search?name=ed
+###                                            /\ para buscar, basta trocar o valor que vem depois do name=
+
+### Add new student
+POST http://localhost:3003/students
+Content-Type: application/json
+
+{
+  "id": "s005",
+  "name": "Name",
+  "age": 00
+}
